@@ -21,10 +21,10 @@ export const projects: Project[] = [
     categories: ['web'],
     field: { es: 'Gestión empresarial · ERP', en: 'Business management · ERP' },
     summary: {
-      es: 'Desarrollé módulos de gestión, autenticación y pagos con actualización en tiempo real.',
-      en: 'I built management, authentication and payment features with real-time updates.',
+      es: 'Desarrollé módulos de gestión y pagos en tiempo real, además de un agente .NET para integrar una terminal BBVA.',
+      en: 'I built management and real-time payment features, along with a .NET agent to integrate a BBVA payment terminal.',
     },
-    technologies: ['React', 'TypeScript', 'Express.js', 'PostgreSQL', 'Socket.IO'],
+    technologies: ['React', 'TypeScript', 'Express.js', 'PostgreSQL', 'Socket.IO', '.NET'],
     images: [
       shot('landy/dash.png', 'Panel administrativo de LandySystem', 'LandySystem admin dashboard'),
       shot('landy/ventas.png', 'Administración de ventas', 'Sales management'),

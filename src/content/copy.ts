@@ -11,9 +11,9 @@ export const copy = {
     closeMenu: 'Cerrar navegación',
     hero: {
       eyebrow: 'LUIS ADRIÁN · INGENIERO DE SOFTWARE',
-      line1: 'Desarrollo',
+      line1: 'Desarrollador',
       line2: 'full stack.',
-      line3: 'Hasta producción.',
+      line3: 'Móvil y web.',
       intro:
         'Desarrollo aplicaciones web y móviles, construyo APIs y gestiono despliegues en desarrollo, QA y producción. Busco aportar esta experiencia a un equipo de ingeniería y seguir creciendo profesionalmente.',
       cta: 'Ver mis proyectos',
@@ -41,11 +41,11 @@ export const copy = {
       title: 'Un perfil técnico,\ncon visión de producto.',
       text: 'Soy ingeniero de software egresado de la Universidad Tecnológica de Tecámac y desarrollador full stack en VLIM Soluciones Integrales en TIC. He participado en proyectos de gestión empresarial, logística y aplicaciones móviles.',
       text2:
-        'Mi experiencia incluye desarrollo de interfaces, APIs y endpoints, integración con bases de datos y despliegues a producción. En Trackit también me encargo de los entornos de desarrollo, QA y producción del proyecto y sus bases de datos.',
+        'Mi experiencia incluye desarrollo de interfaces, APIs y endpoints, integración con bases de datos y despliegues a producción. También me encargo de los entornos de desarrollo, QA y producción del proyecto y sus bases de datos.',
       approach: 'LO QUE APORTO AL EQUIPO',
       principles: [
         {
-          title: 'Desarrollo full stack',
+          title: 'Desarrollador full stack',
           description:
             'Implemento interfaces web y móviles e integro servicios backend para resolver flujos de negocio.',
         },
@@ -107,8 +107,8 @@ export const copy = {
     hero: {
       eyebrow: 'LUIS ADRIÁN · SOFTWARE ENGINEER',
       line1: 'Full stack',
-      line2: 'development.',
-      line3: 'Into production.',
+      line2: 'developer.',
+      line3: 'Mobile & web.',
       intro:
         'I develop web and mobile applications, build APIs and manage deployments across development, QA and production. I’m looking to bring this experience to an engineering team and continue growing professionally.',
       cta: 'Explore my work',
@@ -136,11 +136,11 @@ export const copy = {
       title: 'Technical skills,\nwith a product perspective.',
       text: 'I’m a software engineer, a graduate of Universidad Tecnológica de Tecámac and a full stack developer at VLIM Soluciones Integrales en TIC. I have contributed to business management, logistics and mobile application projects.',
       text2:
-        'My experience includes interface development, APIs and endpoints, database integration and production deployments. On Trackit, I also manage development, QA and production environments for the project and its databases.',
+        'My experience includes building interfaces, developing APIs and endpoints, integrating databases and deploying to production. I also manage the project’s development, QA and production environments and their databases.',
       approach: 'WHAT I BRING TO A TEAM',
       principles: [
         {
-          title: 'Full stack development',
+          title: 'Full stack developer',
           description:
             'I build web and mobile interfaces and integrate backend services to support business workflows.',
         },

@@ -109,11 +109,11 @@
   },
   "landysystem": {
     "title": "LandySystem",
-    "description": "ERP multisucursal con panel administrativo y punto de venta. Participé en módulos de usuarios, empleados, roles, autenticación JWT y pagos a crédito con actualizaciones en tiempo real mediante WebSockets.",
+    "description": "ERP multisucursal con panel administrativo y punto de venta. Participé en módulos de usuarios, empleados, roles, autenticación JWT y pagos a crédito en tiempo real. También desarrollé un agente en .NET para integrar una terminal de pagos BBVA mediante APIs y sockets.",
     "adminLinkText": "Administrativo",
     "posLinkText": "Punto de venta",
     "modalContent": {
-      "overview": "Participé en el desarrollo de LandySystem, un ERP web multisucursal con una plataforma administrativa y una sección contable/POS. Mi trabajo se enfocó en la gestión de usuarios, empleados y roles, además de flujos financieros para ventas a crédito con sincronización en tiempo real.",
+      "overview": "Participé en el desarrollo de LandySystem, un ERP web multisucursal con una plataforma administrativa y una sección contable/POS. Mi trabajo se enfocó en la gestión de usuarios, empleados y roles, además de flujos financieros para ventas a crédito con sincronización en tiempo real. También desarrollé un agente en .NET que conecta LandySystem con una terminal de pagos BBVA mediante APIs y sockets: el agente escucha los eventos de la terminal y LandySystem escucha los eventos emitidos por el agente.",
       "mainFeaturesTitle": "Funcionalidades principales",
       "mainFeatures": [
         "Administración de usuarios, empleados y roles para un entorno multisucursal.",
@@ -121,7 +121,9 @@
         "Paneles de gestión construidos en React.js para operaciones administrativas.",
         "Módulo de pagos y abonos para ventas a crédito.",
         "Actualización en tiempo real de saldos, pagos y movimientos financieros mediante WebSockets.",
-        "Integración entre frontend, APIs en Express.js y base de datos PostgreSQL."
+        "Integración entre frontend, APIs en Express.js y base de datos PostgreSQL.",
+        "Integración con una terminal de pagos BBVA mediante un agente .NET, APIs y sockets.",
+        "Escucha de eventos de la terminal por parte del agente y de eventos del agente por parte de LandySystem."
       ],
       "participationTitle": "Mi participación",
       "participation": [
@@ -129,7 +131,9 @@
         "Implementé autenticación basada en JWT en flujos administrativos.",
         "Construí paneles y vistas en React.js con TypeScript.",
         "Participé en el desarrollo del módulo de pagos y abonos para ventas a crédito.",
-        "Integré sincronización en tiempo real con WebSockets/Socket.IO para mantener saldos y movimientos consistentes."
+        "Integré sincronización en tiempo real con WebSockets/Socket.IO para mantener saldos y movimientos consistentes.",
+        "Desarrollé un agente en .NET para comunicar LandySystem con la terminal de pagos BBVA mediante APIs y sockets.",
+        "Implementé la escucha de eventos de la terminal en el agente y la escucha de eventos del agente en LandySystem."
       ],
       "stackTitle": "Stack tecnológico"
     }

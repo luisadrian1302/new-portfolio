@@ -109,11 +109,11 @@
   },
   "landysystem": {
     "title": "LandySystem",
-    "description": "Multi-branch ERP with an administrative dashboard and POS/accounting area. I worked on user, employee, role, JWT authentication, and credit payment modules with real-time updates through WebSockets.",
+    "description": "Multi-branch ERP with an administrative dashboard and point of sale. I contributed to user, employee and role management, JWT authentication and real-time credit payment features. I also built a .NET agent to integrate a BBVA payment terminal through APIs and sockets.",
     "adminLinkText": "Admin",
     "posLinkText": "POS",
     "modalContent": {
-      "overview": "I contributed to LandySystem, a multi-branch web ERP with an administrative platform and a POS/accounting area. My work focused on user, employee, and role management, plus financial flows for credit sales with real-time synchronization.",
+      "overview": "I contributed to LandySystem, a multi-branch web ERP with an administrative platform and a POS/accounting area. My work focused on user, employee and role management, as well as financial workflows for credit sales with real-time synchronization. I also built a .NET agent that connects LandySystem to a BBVA payment terminal through APIs and sockets: the agent listens for terminal events, and LandySystem listens for events emitted by the agent.",
       "mainFeaturesTitle": "Main Features",
       "mainFeatures": [
         "User, employee, and role management for a multi-branch environment.",
@@ -121,7 +121,9 @@
         "Management dashboards built in React.js for administrative operations.",
         "Payment and installment module for credit sales.",
         "Real-time updates for balances, payments, and financial movements through WebSockets.",
-        "Integration between the frontend, Express.js APIs, and a PostgreSQL database."
+        "Integration between the frontend, Express.js APIs, and a PostgreSQL database.",
+        "BBVA payment terminal integration through a .NET agent, APIs and sockets.",
+        "Event flow from the terminal to the agent and from the agent to LandySystem."
       ],
       "participationTitle": "My Contribution",
       "participation": [
@@ -129,7 +131,9 @@
         "Implemented JWT-based authentication in administrative flows.",
         "Built React.js and TypeScript dashboards and views.",
         "Contributed to the payment and installment module for credit sales.",
-        "Integrated real-time synchronization with WebSockets/Socket.IO to keep balances and movements consistent."
+        "Integrated real-time synchronization with WebSockets/Socket.IO to keep balances and movements consistent.",
+        "Built a .NET agent to connect LandySystem to the BBVA payment terminal through APIs and sockets.",
+        "Implemented terminal event listeners in the agent and agent event listeners in LandySystem."
       ],
       "stackTitle": "Technology Stack"
     }
