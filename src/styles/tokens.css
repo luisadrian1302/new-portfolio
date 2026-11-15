@@ -1,0 +1,17 @@
+:root {
+  --color-bg: #f7f8f4;
+  --color-surface: #fff;
+  --color-ink: #202c28;
+  --color-muted: #65716a;
+  --color-accent: #315b45;
+  --color-accent-dark: #203f31;
+  --color-line: #dce1d8;
+  --color-soft: #edf0e8;
+  --font-sans: 'Inter', 'Segoe UI', Arial, sans-serif;
+  --font-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
+  --content-width: 1200px;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --space-section: 112px;
+}
