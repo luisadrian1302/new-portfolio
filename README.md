@@ -86,5 +86,30 @@ Los estilos se cargan en orden: tokens → base → layout → proyectos. Cambia
 
 `npm run build` genera `dist/`, que se puede alojar en un servicio estático. `base: './'` y el helper `asset()` mantienen los recursos compatibles con subdirectorios, por ejemplo GitHub Pages. Publica el contenido de `dist/`; no abras `index.html` directamente mediante `file://`.
 
-Los enlaces externos se conservaron del portafolio original. Los enlaces de LandySystem están identificados como entornos de desarrollo. Las notas sobre contenido simulado y el estado pausado de Benito Juárez se conservan en sus fichas. Revisa y actualiza la situación profesional en `profile.ts` cuando cambie.
+### GitHub Pages con publicación automática
 
+El repositorio configurado es `https://github.com/luisadrian1302/new-portfolio`. El archivo `.github/workflows/deploy.yml` instala dependencias con `npm ci`, valida TypeScript, compila con Node 22 y publica `dist/` cuando se suben cambios a `main`.
+
+1. En GitHub, abre el repositorio y entra en **Settings → Pages**.
+2. En **Build and deployment → Source**, selecciona **GitHub Actions**. El flujo ya está incluido; no necesitas crear otro desde una plantilla.
+3. Desde esta carpeta, sube la configuración:
+
+   ```sh
+   git add .github/workflows/deploy.yml README.md
+   git commit -m "Configurar publicación en GitHub Pages"
+   git push origin main
+   ```
+
+4. Abre **Actions → Publicar portafolio** y espera a que termine correctamente. La ejecución mostrará el enlace del sitio publicado.
+
+La dirección esperada, sin dominio personalizado, es **https://luisadrian1302.github.io/new-portfolio/**. El flujo pasa `--base="/new-portfolio/"` a Vite usando el nombre del repositorio para resolver correctamente scripts, imágenes y certificados. La configuración local conserva rutas relativas para otros alojamientos.
+
+Para futuras actualizaciones, guarda tus cambios, haz commit y ejecuta `git push origin main`. No subas `node_modules/` ni `dist/`: GitHub genera la compilación. También puedes iniciar una publicación desde **Actions → Publicar portafolio → Run workflow**.
+
+Si el flujo falla, abre el paso marcado en rojo en **Actions**. Verifica primero que Pages tenga **GitHub Actions** como origen. GitHub Pages está disponible para repositorios públicos con el plan gratuito; para repositorios privados depende del plan de GitHub.
+
+Para usar un dominio propio, configúralo en Pages y cambia el argumento del build a `--base=/`. `npm run dev` y `npm run preview` son servidores locales; no publican el sitio en Internet.
+
+Referencias: [Vite en GitHub Pages](https://vite.dev/guide/static-deploy#github-pages) y [configuración de Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
+
+Los enlaces externos se conservaron del portafolio original. Los enlaces de LandySystem están identificados como entornos de desarrollo. Las notas sobre contenido simulado y el estado pausado de Benito Juárez se conservan en sus fichas. Revisa y actualiza la situación profesional en `profile.ts` cuando cambie.
